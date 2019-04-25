@@ -41,7 +41,7 @@ $aModule = array(
     ],
     'version'     => '2.0.0',
     'author'      => 'Eberhard Schneider',
-    'extend'      => [
-        \OxidEsales\Eshop\Application\Model\Basket::class => \OxidEsales\LoggerDemo\Model\Basket::class,
-    ],
+    'blocks' => array(
+        array('template' => 'layout/header.tpl', 'block'=>'header_main', 'file'=>'/views/user.tpl'),
+    ),
 );

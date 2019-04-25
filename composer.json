@@ -1,5 +1,5 @@
 {
-    "name": "e-schneider/oxiddemomodule",
+    "name": "esch/oxiddemomodule",
     "description": "Demo Module For Marmalade",
     "type": "oxideshop-module",
     "extra": {
@@ -7,7 +7,7 @@
             "blacklist-filter": [
                 "documentation/**/*.*"
             ],
-            "target-directory": "e-schneider/oxiddemomodule"
+            "target-directory": "esch/oxiddemomodule"
         }
     },
     "require": {
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ESchneider\\OxidDemoModule\\": "../../../source/modules/e-schneider/oxiddemomodule"
+            "ESchneider\\OxidDemoModule\\": "../../../source/modules/esch/oxiddemomodule"
         }
     }
 }
