@@ -42,6 +42,6 @@ $aModule = array(
     'version'     => '2.0.0',
     'author'      => 'Eberhard Schneider',
     'blocks' => array(
-        array('template' => 'layout/header.tpl', 'block'=>'header_main', 'file'=>'/views/user.tpl'),
+        array('template' => 'layout/header.tpl', 'block'=>'dd_layout_page_header_icon_menu_minibasket', 'file'=>'/views/user.tpl'),
     ),
 );

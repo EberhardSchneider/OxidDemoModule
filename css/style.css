@@ -1,3 +1,10 @@
-div.demo span h1 {
-    color: red;
+div.demo {
+    padding: 12px;
+}
+
+
+div.demo span {
+    background-color: transparent;
+    font-size: 11px;
+    color: #777;
 }
