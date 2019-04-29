@@ -15,7 +15,8 @@
         "lib-curl": ">=7.26.0",
         "lib-openssl": ">=1.0.1",
         "ext-curl": "*",
-        "ext-openssl": "*"
+        "ext-openssl": "*",
+        "eberhardschneider/oxiddemoodule": "master"
     },
     "autoload": {
         "psr-4": {
