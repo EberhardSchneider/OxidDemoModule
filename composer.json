@@ -1,5 +1,5 @@
 {
-    "name": "e-schneider/oxiddemomodule",
+    "name": "eschneider/oxiddemomodule",
     "description": "Demo Module For Marmalade",
     "type": "oxideshop-module",
     "extra": {
