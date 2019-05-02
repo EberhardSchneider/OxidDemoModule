@@ -46,6 +46,6 @@ $aModule = array(
         \OxidEsales\Eshop\Application\Model\Basket::class => ESch\OxidDemoModule\Model\Basket::class,
     ),
     'blocks' => array(
-        array('template' => 'layout/header.tpl', 'block'=>'dd_layout_page_header_icon_menu_minibasket', 'file'=>'/views/user.tpl'),
+        array('template' => 'layout/header.tpl', 'block'=>'dd_layout_page_header_icon_menu_minibasket', 'file'=>'/views/shipping.tpl'),
     )
 );

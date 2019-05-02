@@ -4,6 +4,6 @@
 <div class="demo">
  <span>
  DEMO
-    You're paying: [{$currency->sign}]
+    You're paying: [{$oxcmp_basket->getFreeShippingLimit()}] [{$currency->sign}]
 </span>
 </div>
