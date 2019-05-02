@@ -29,8 +29,9 @@ $sMetadataVersion = '2.0';
 /**
  * Module information
  */
+ 
 $aModule = array(
-    'id'          => 'oxiddemomodule',
+    'id'          => 'eschoxiddemomodule',
     'title'       => [
         'de' => 'Oxid Demo Module',
         'en' => 'Oxid Demo Module',
@@ -41,9 +42,9 @@ $aModule = array(
     ],
     'version'     => '2.0.0',
     'author'      => 'Eberhard Schneider',
-    'extend' => [
-        \OxidEsales\EShop\Application\Model\Basket::class => \OxidEsales\OxidDemoModule\Model\Basket::class,
-      ],
+    'extend' => array(
+        \OxidEsales\Eshop\Application\Model\Basket::class => ESch\OxidDemoModule\Model\Basket::class,
+    ),
     'blocks' => array(
         array('template' => 'layout/header.tpl', 'block'=>'dd_layout_page_header_icon_menu_minibasket', 'file'=>'/views/user.tpl'),
     )

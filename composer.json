@@ -1,12 +1,9 @@
 {
-    "name": "esch/oxiddemomodule",
+    "name": "e-schneider/oxiddemomodule",
     "description": "Demo Module For Marmalade",
     "type": "oxideshop-module",
     "extra": {
         "oxideshop": {
-            "blacklist-filter": [
-                "documentation/**/*.*"
-            ],
             "target-directory": "esch/oxiddemomodule"
         }
     },
@@ -15,12 +12,11 @@
         "lib-curl": ">=7.26.0",
         "lib-openssl": ">=1.0.1",
         "ext-curl": "*",
-        "ext-openssl": "*",
-        "eberhardschneider/oxiddemoodule": "master"
+        "ext-openssl": "*"
     },
     "autoload": {
         "psr-4": {
-            "ESchneider\\OxidDemoModule\\": "../../../source/modules/esch/oxiddemomodule"
+            "ESch\\OxidDemoModule\\": "../../../source/modules/esch/oxiddemomodule"
         }
     }
 }
