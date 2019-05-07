@@ -32,14 +32,23 @@ class Basket extends Basket_parent
                             : $minShippingLimit;
                 }
         }
-        $delivery->load($activeRuleId[0]);
-        $limit = $delivery->oxdelivery__oxparam->value;
-        return floatval($limit);
+
+        if ($activeRuleId) {
+            $delivery->load($activeRuleId[0]);
+            $limit = $delivery->oxdelivery__oxparam->value;
+            return floatval($limit);
+        } else {
+            return null;
+        }
     }
 
     public function getDifferenceToFreeShipping() {
         $bruttoSum = $this->getBruttoSum();
         $limit = $this->getFreeShippingLimit();
-        return $limit - $bruttoSum;
+        if ($limit) {
+            return $limit - $bruttoSum;
+        } else {
+            return null;
+        }
     }
 }
