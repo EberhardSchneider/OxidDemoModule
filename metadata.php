@@ -43,9 +43,15 @@ $aModule = array(
     'version'     => '2.0.0',
     'author'      => 'Eberhard Schneider',
     'extend' => array(
-        \OxidEsales\Eshop\Application\Model\Basket::class => ESch\OxidDemoModule\Model\Basket::class,
+        \OxidEsales\Eshop\Application\Model\Basket::class 
+            => ESch\OxidDemoModule\Model\Basket::class,
     ),
     'blocks' => array(
-        array('template' => 'layout/header.tpl', 'block'=>'dd_layout_page_header_icon_menu_minibasket', 'file'=>'/views/shipping.tpl'),
-    )
+        array('template' => 'layout/header.tpl', 
+                'block'=>'dd_layout_page_header_icon_menu_minibasket', 
+                'file'=>'/views/shipping.tpl'),
+    ),
+    'settings' => [
+        ['group' => 'main', 'name' => 'freeShippingLimit', 'type' => 'float', 'value' => '80']
+    ]
 );
